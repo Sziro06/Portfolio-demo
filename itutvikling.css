@@ -1,0 +1,160 @@
+body{
+    background-color: rgb(7, 7, 7);
+    margin: 0;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: 100%;
+}
+
+.title{
+    left: 200px;
+    border: solid 2px rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    border-radius: 55px;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 8px;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.programminglanguage{
+    --g: 20px;
+    --s: 400px;
+
+    display: grid;
+    border-radius: 50%;
+}
+
+.programminglanguage > img {
+    grid-area: 1/1;
+    width: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(var(--_x,0),var(--_y,0));
+    cursor: pointer;
+    z-index: 0;
+    transition: .3s, z-index 0s .3s;
+}
+
+.programminglanguage img:hover {
+    --_i: 1;
+    z-index: 1;
+    transition: transform .2s, clip-path .3s .2s, z-index 0s;
+}
+
+.programminglanguage:hover img {
+    transform: translate(0,0);
+}
+
+.programminglanguage > img:nth-child(1) {
+    clip-path: polygon(50% 50%,calc(50%*var(--_i,0))
+    calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0
+    0,100% 0,100% calc(100%*var(--_i,0)),
+    calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+    --_y: calc(-1*var(--g))
+}
+
+.programminglanguage > img:nth-child(2) {
+    clip-path: polygon(50% 50%,calc(50%*var(--_i,0))
+    calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0
+    0,100% 0,100% calc(100%*var(--_i,0)),
+    calc(50% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+    --_y: calc(-1*var(--g))
+}
+
+.programminglanguage > img:nth-child(3) {
+    clip-path: polygon(50% 50%,calc(50%*var(--_i,0))
+    calc(120%*var(--_i,0.4)),0 calc(100%*var(--_i,0)),0
+    0,100% 0,100% calc(100%*var(--_i,0)),
+    calc(0% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+    --_y: calc(-1*var(--g))
+}
+
+.ide{
+    --g: 20px;
+    --s: 400px;
+
+    display: grid;
+    border-radius: 50%;
+}
+
+.ide > img {
+    grid-area: 1/1;
+    width: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(var(--_x,0),var(--_y,0));
+    cursor: pointer;
+    z-index: 0;
+    transition: .3s, z-index 0s .3s;
+}
+
+.ide img:hover {
+    --_i: 1;
+    z-index: 1;
+    transition: transform .2s, clip-path .3s .2s, z-index 0s;
+}
+
+.ide:hover img {
+    transform: translate(0,0);
+}
+
+.ide > img:nth-child(1) {
+    clip-path: polygon(50% 50%,calc(50%*var(--_i,0))
+    calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0
+    0,100% 0,100% calc(100%*var(--_i,0)),
+    calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+    --_y: calc(-1*var(--g))
+}
+
+.ide > img:nth-child(2) {
+    clip-path: polygon(50% 50%,calc(50%*var(--_i,0))
+    calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0
+    0,100% 0,100% calc(100%*var(--_i,0)),
+    calc(50% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+    --_y: calc(-1*var(--g))
+}
+
+.ide > img:nth-child(3) {
+    clip-path: polygon(50% 50%,calc(50%*var(--_i,0))
+    calc(120%*var(--_i,0.4)),0 calc(100%*var(--_i,0)),0
+    0,100% 0,100% calc(100%*var(--_i,0)),
+    calc(0% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+    --_y: calc(-1*var(--g))
+}
+
+.ide > img:nth-child(4) {
+    clip-path: polygon(50% 50%,calc(50%*var(--_i,2))
+    calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0
+    0,100% 0,100% calc(100%*var(--_i,0)),
+    calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0.4)));
+    --_y: calc(-1*var(--g))
+}
+
+h1{
+    margin: 1rem;
+}
+
+h2, p{
+    line-height: 150%;
+    color: rgb(0, 255, 0);
+}
+
+h3{
+    text-align: center;
+    color: rgb(0, 255, 0);
+}
+
+b{
+    text-decoration: underline;
+}
+
+video{
+    border: solid 2px white;
+    width: 50rem;
+    height: 30rem;
+}
